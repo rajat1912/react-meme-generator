@@ -20,7 +20,7 @@ const Meme = () => {
   function getMemeImage() {
 
     const randomNumber = Math.floor(Math.random() * allMemes.length)
-     const url = "https://i.imgflip.com/5o32tt.png"                //allMemes[randomNumber].url
+     const url = allMemes[randomNumber].url
     setMeme(prevMeme => ({
       ...prevMeme,
       randomImage: url
